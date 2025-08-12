@@ -21,7 +21,7 @@ jobs:
       - name: Publish to gh-pages with PAT
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PAGES_PAT }}   # <-- tu PAT guardado en Secrets
+          personal_token: ${{ secrets.PAGES_PAT }}  
           publish_branch: gh-pages
-          publish_dir: ./public                      # <-- cambia a ./dist si hiciste build
+          publish_dir: ./public                     
           force_orphan: true
