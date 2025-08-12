@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo Pages con PAT</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Deploy a GitHub Pages con PAT</h1>
+    <p>Publicado vía GitHub Actions usando un token manual guardado en Secrets.</p>
+    <a class="btn" href="https://github.com/ArielU10/examenADSI.git">Ver repositorio</a>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Automatización</h2>
+      <p>Cada push a <code>main</code> despliega automáticamente a <b>gh-pages</b>.</p>
+    </section>
+    <section class="card">
+      <h2>Seguridad</h2>
+      <p>El token vive en <code>Secrets</code>, nunca en el YAML.</p>
+    </section>
+    <section class="card">
+      <h2>Simple</h2>
+      <p>Sin frameworks: HTML + CSS estáticos.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 • Demo CI/CD con GitHub Actions + Pages (PAT)</small>
+  </footer>
+</body>
+</html>
